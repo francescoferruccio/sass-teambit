@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $border-color;
 
     a {
       margin: 0 20px;
@@ -12,7 +12,9 @@ header {
     }
 
     .btn {
-      padding: 5px 20px;
+      background-color: #fff;
+      color: $btn-color;
+      padding: 10px 15px;
       border: 1px solid $btn-color;
       border-radius: 5px;
     }
@@ -21,7 +23,7 @@ header {
   .jumbotron {
     display: flex;
     align-items: center;
-    height: 600px;
+    height: 650px;
 
     .jumbo-left {
       width: 50%;

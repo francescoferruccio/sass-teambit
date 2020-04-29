@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #bdb5af;
 }
 
 header .navbar a {
@@ -11,7 +11,9 @@ header .navbar a {
 }
 
 header .navbar .btn {
-  padding: 5px 20px;
+  background-color: #fff;
+  color: #30488f;
+  padding: 10px 15px;
   border: 1px solid #30488f;
   border-radius: 5px;
 }
@@ -19,7 +21,7 @@ header .navbar .btn {
 header .jumbotron {
   display: flex;
   align-items: center;
-  height: 600px;
+  height: 650px;
 }
 
 header .jumbotron .jumbo-left {
@@ -46,7 +48,7 @@ header .jumbotron .jumbo-right img {
 }
 
 #people .before {
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #bdb5af;
   padding-bottom: 50px;
 }
 
@@ -280,5 +282,12 @@ span {
   color: #fff;
   border-radius: 5px;
   font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-img {
+  width: 15px;
+  margin-right: 5px;
 }
 

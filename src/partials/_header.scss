@@ -17,6 +17,11 @@ header {
       padding: 10px 15px;
       border: 1px solid $btn-color;
       border-radius: 5px;
+
+      &:hover {
+        background-color: $btn-color;
+        color: #fff;
+      }
     }
   }
 

@@ -18,6 +18,11 @@ header .navbar .btn {
   border-radius: 5px;
 }
 
+header .navbar .btn:hover {
+  background-color: #30488f;
+  color: #fff;
+}
+
 header .jumbotron {
   display: flex;
   align-items: center;
@@ -140,6 +145,7 @@ header .jumbotron .jumbo-right img {
 }
 
 #get-started .founder-msg {
+  position: relative;
   text-align: left;
   width: 60%;
   margin: 50px auto;
@@ -150,7 +156,7 @@ header .jumbotron .jumbo-right img {
   line-height: 24px;
 }
 
-#get-started .founder-img {
+#get-started .founder-msg .founder-img {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -158,15 +164,22 @@ header .jumbotron .jumbo-right img {
   margin-top: 20px;
 }
 
-#get-started .founder-img img {
+#get-started .founder-msg .founder-img img {
   margin-right: 10px;
   width: 40px;
   height: 40px;
 }
 
-#get-started .founder-img .names {
+#get-started .founder-msg .founder-img .names {
   display: flex;
   flex-direction: column;
+}
+
+#get-started .founder-msg .quote {
+  position: absolute;
+  top: -25px;
+  left: -2px;
+  width: 40px;
 }
 
 #get-started .signup-btn p {
@@ -263,6 +276,10 @@ a {
   color: #58402c;
 }
 
+a:hover {
+  color: #30488f;
+}
+
 span {
   margin: 0px 10px;
 }
@@ -284,6 +301,11 @@ span {
   font-size: 14px;
   display: inline-flex;
   align-items: center;
+}
+
+.btn:hover {
+  background-color: #233569;
+  color: #fff;
 }
 
 .btn-img {

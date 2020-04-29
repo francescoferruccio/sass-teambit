@@ -1,0 +1,26 @@
+@import "partials/_variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+header {
+  width: 60%;
+  margin: auto;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+}

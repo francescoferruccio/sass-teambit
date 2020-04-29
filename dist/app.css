@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+header {
+  width: 60%;
+  margin: auto;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header .navbar a {
+  margin: 0 10px;
+}
+

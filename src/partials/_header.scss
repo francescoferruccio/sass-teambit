@@ -3,12 +3,63 @@ header {
   .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid $border-color;
 
-    a {
-      margin: 0 20px;
-      font-size: 14px;
+    .nav-link {
+      display: flex;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: 0 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .solutions {
+      position: relative;
+
+      .dropdown {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid $text-color;
+        border-radius: 5px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          li {
+            margin: 10px;
+
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .solutions:hover .dropdown {
+      display: block;
+    }
+
+    .fa-sort-down {
+      margin-left: 5px;
+      color: #b49982;
+    }
+
+    .dropdown {
+      display: none;
     }
 
     .btn {

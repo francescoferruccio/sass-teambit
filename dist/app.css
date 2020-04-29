@@ -1,13 +1,64 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);header .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid #bdb5af;
 }
 
-header .navbar a {
+header .navbar .nav-link {
+  display: flex;
+}
+
+header .navbar .nav-link ul {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .nav-link ul a {
   margin: 0 20px;
   font-size: 14px;
+}
+
+header .navbar .solutions {
+  position: relative;
+}
+
+header .navbar .solutions .dropdown {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #58402c;
+  border-radius: 5px;
+}
+
+header .navbar .solutions .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header .navbar .solutions .dropdown ul li {
+  margin: 10px;
+}
+
+header .navbar .solutions .dropdown ul li a {
+  margin: 0;
+}
+
+header .navbar .solutions:hover .dropdown {
+  display: block;
+}
+
+header .navbar .fa-sort-down {
+  margin-left: 5px;
+  color: #b49982;
+}
+
+header .navbar .dropdown {
+  display: none;
 }
 
 header .navbar .btn {
@@ -173,6 +224,10 @@ header .jumbotron .jumbo-right img {
 #get-started .founder-msg .founder-img .names {
   display: flex;
   flex-direction: column;
+}
+
+#get-started .founder-msg .founder-img .names .founders-names {
+  color: #30488f;
 }
 
 #get-started .founder-msg .quote {

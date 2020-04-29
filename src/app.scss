@@ -3,15 +3,15 @@
 
 // DEBUG:
 section {
-  min-height: 200px;
-  background-color: grey;
+  // min-height: 200px;
+  // background-color: grey;
   border: 1px solid black;
 }
 
 div {
-  min-height: 100px;
-  background-color: pink;
-  border: 1px solid black;
+  // min-height: 100px;
+  // background-color: pink;
+  // border: 1px solid black;
 }
 
 // regole generali
@@ -32,6 +32,19 @@ div {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 40px 0;
+  line-height: 30px;
 }
 
 a {
@@ -39,6 +52,28 @@ a {
   color: $text-color;
 }
 
+span {
+  margin: 0px 10px;
+}
+
+.signup-btn {
+  margin: 10px 0;
+
+  p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+.btn {
+  background-color: $btn-color;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+// regole header
 header {
   .navbar {
     display: flex;
@@ -60,22 +95,74 @@ header {
 
   .jumbotron {
     display: flex;
+    align-items: center;
     height: 600px;
 
     .jumbo-left {
       width: 50%;
+      padding-right: 40px;
     }
 
     .jumbo-right {
       width: 50%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
 
 // sezione people
 #people {
+  background-color: $background-color;
+  text-align: center;
+  padding: 100px 0;
+
+  .before {
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 50px;
+  }
+
+  .after {
+    padding-top: 50px;
+  }
+
+  h3 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
   .box-img-small {
     width: 33%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 140px;
+      max-height: 140px;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      width: 60%;
+      font-size: 16px;
+      font-weight: lighter;
+      line-height: 25px;
+    }
+  }
+
+  .box-img-big {
+    margin-top: 50px;
+
+    img {
+      width: 280px;
+    }
   }
 }
 
@@ -87,10 +174,12 @@ header {
   }
 }
 
+// sezione get started
 #get-started {
   text-align: center;
 }
 
+// regole footer
 footer {
   height: 550px;
 

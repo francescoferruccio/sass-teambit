@@ -1,0 +1,39 @@
+// regole header
+header {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid $text-color;
+
+    a {
+      margin: 0 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 5px 20px;
+      border: 1px solid $btn-color;
+      border-radius: 5px;
+    }
+  }
+
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    height: 600px;
+
+    .jumbo-left {
+      width: 50%;
+      padding-right: 40px;
+    }
+
+    .jumbo-right {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

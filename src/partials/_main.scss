@@ -1,0 +1,142 @@
+.row {
+  display: flex;
+}
+
+// sezione people
+#people {
+  background-color: $background-color;
+  text-align: center;
+  padding: 100px 0;
+
+  .before {
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 50px;
+  }
+
+  .after {
+    padding-top: 50px;
+
+    h3 {
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .box-img-small {
+    width: 33%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 140px;
+      max-height: 140px;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      width: 60%;
+      font-size: 16px;
+      font-weight: lighter;
+      line-height: 25px;
+    }
+  }
+
+  .box-img-big {
+    margin-top: 50px;
+
+    img {
+      width: 280px;
+    }
+  }
+}
+
+// sezione features
+#features {
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 100px auto;
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+
+    .features-img {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .features-info {
+      width: 25%;
+
+      a {
+        color: $btn-color;
+        font-size: 20px;
+      }
+
+      img {
+        display: block;
+        margin: 50px auto;
+        width: 70%;
+      }
+    }
+  }
+}
+
+// sezione get started
+#get-started {
+  text-align: center;
+  background-color: $background-color;
+  padding: 50px;
+
+  .founder-msg {
+    text-align: left;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    padding: 30px;
+    line-height: 24px;
+  }
+
+  .founder-img {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+
+    img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .names {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .signup-btn {
+    p {
+      margin-top: 30px;
+    }
+  }
+}

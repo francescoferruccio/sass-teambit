@@ -27,6 +27,10 @@ h1 {
   margin: 20px 0;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -112,11 +116,15 @@ header .jumbotron .jumbo-right img {
   padding-top: 50px;
 }
 
+#people .after h3 {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
 #people h3 {
   width: 60%;
   margin: auto;
   margin-bottom: 50px;
-  font-size: 24px;
 }
 
 #people .box-img-small {
@@ -152,6 +160,31 @@ header .jumbotron .jumbo-right img {
 #features .row {
   width: 85%;
   margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 100px auto;
+}
+
+#features .row:nth-child(even) {
+  justify-content: flex-end;
+}
+
+#features .row .features-img {
+  width: 50%;
+}
+
+#features .row .features-img img {
+  width: 100%;
+}
+
+#features .row .features-info {
+  width: 25%;
+}
+
+#features .row .features-info a {
+  color: #30488f;
+  font-size: 20px;
 }
 
 #get-started {

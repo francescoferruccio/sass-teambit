@@ -40,6 +40,10 @@ h1 {
   margin: 20px 0;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -126,13 +130,17 @@ header {
 
   .after {
     padding-top: 50px;
+
+    h3 {
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
   }
 
   h3 {
     width: 60%;
     margin: auto;
     margin-bottom: 50px;
-    font-size: 24px;
   }
 
   .box-img-small {
@@ -171,6 +179,31 @@ header {
   .row {
     width: 85%;
     margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 100px auto;
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+
+    .features-img {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .features-info {
+      width: 25%;
+
+      a {
+        color: $btn-color;
+        font-size: 20px;
+      }
+    }
   }
 }
 

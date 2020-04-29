@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);section {
-  border: 1px solid black;
-}
-
-.container {
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);.container {
   width: 60%;
   margin: auto;
 }
@@ -22,9 +18,17 @@ body {
   color: #58402c;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   font-size: 50px;
   margin: 20px 0;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 h3 {
@@ -187,12 +191,55 @@ header .jumbotron .jumbo-right img {
   font-size: 20px;
 }
 
+#features .row .features-info img {
+  display: block;
+  margin: 50px auto;
+  width: 70%;
+}
+
 #get-started {
   text-align: center;
+  background-color: #ffe7d2;
+  padding: 50px;
+}
+
+#get-started .founder-msg {
+  text-align: left;
+  width: 60%;
+  margin: 50px auto;
+  background-color: #fff;
+  border: 1px solid #58402c;
+  border-radius: 5px;
+  padding: 30px;
+  line-height: 24px;
+}
+
+#get-started .founder-img {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+#get-started .founder-img img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+#get-started .founder-img .names {
+  display: flex;
+  flex-direction: column;
+}
+
+#get-started .signup-btn p {
+  margin-top: 30px;
 }
 
 footer {
   height: 550px;
+  padding: 100px 0;
 }
 
 footer .container {
@@ -200,10 +247,38 @@ footer .container {
 }
 
 footer .footer-msg {
-  width: 25%;
+  width: 40%;
+  display: flex;
+  padding-right: 100px;
+}
+
+footer .footer-msg img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+footer .footer-msg span {
+  font-weight: bold;
+}
+
+footer .footer-msg span a {
+  color: #30488f;
 }
 
 footer div {
-  width: 15%;
+  width: calc(60% / 5);
+}
+
+footer div li {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+footer div li:first-child {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 

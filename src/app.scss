@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "partials/_variables";
 
-// DEBUG:
-section {
-  // min-height: 200px;
-  // background-color: grey;
-  border: 1px solid black;
-}
-
-div {
-  // min-height: 100px;
-  // background-color: pink;
-  // border: 1px solid black;
-}
-
 // regole generali
 .container {
   width: 60%;
@@ -35,9 +22,17 @@ body {
   color: $text-color;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   font-size: 50px;
   margin: 20px 0;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 h3 {
@@ -203,6 +198,12 @@ header {
         color: $btn-color;
         font-size: 20px;
       }
+
+      img {
+        display: block;
+        margin: 50px auto;
+        width: 70%;
+      }
     }
   }
 }
@@ -210,21 +211,88 @@ header {
 // sezione get started
 #get-started {
   text-align: center;
+  background-color: $background-color;
+  padding: 50px;
+
+  .founder-msg {
+    text-align: left;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    padding: 30px;
+    line-height: 24px;
+  }
+
+  .founder-img {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+
+    img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .names {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .signup-btn {
+    p {
+      margin-top: 30px;
+    }
+  }
 }
 
 // regole footer
 footer {
   height: 550px;
+  padding: 100px 0;
 
   .container {
     display: flex;
   }
 
   .footer-msg {
-    width: 25%;
+    width: 40%;
+    display: flex;
+    padding-right: 100px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    span {
+      font-weight: bold;
+
+      a {
+        color: $btn-color;
+      }
+    }
   }
 
   div {
-    width: 15%;
+    width: calc(60% / 5);
+
+    li {
+      margin: 15px 0;
+      font-size: 14px;
+
+      &:first-child {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+    }
   }
 }

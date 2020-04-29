@@ -1,7 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);section {
+  min-height: 200px;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+div {
+  min-height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -9,18 +34,63 @@ a {
   color: #58402c;
 }
 
-header {
-  width: 60%;
-  margin: auto;
-}
-
 header .navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  border-bottom: 1px solid #58402c;
 }
 
 header .navbar a {
-  margin: 0 10px;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+header .navbar .btn {
+  padding: 5px 20px;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+}
+
+header .jumbotron {
+  display: flex;
+  height: 600px;
+}
+
+header .jumbotron .jumbo-left {
+  width: 50%;
+}
+
+header .jumbotron .jumbo-right {
+  width: 50%;
+}
+
+#people .box-img-small {
+  width: 33%;
+}
+
+#features .row {
+  width: 85%;
+  margin: auto;
+}
+
+#get-started {
+  text-align: center;
+}
+
+footer {
+  height: 550px;
+}
+
+footer .container {
+  display: flex;
+}
+
+footer .footer-msg {
+  width: 25%;
+}
+
+footer div {
+  width: 15%;
 }
 

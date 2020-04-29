@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "partials/_variables";
+
+// DEBUG:
+section {
+  min-height: 200px;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+div {
+  min-height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+// regole generali
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -12,15 +40,69 @@ a {
 }
 
 header {
-  width: 60%;
-  margin: auto;
   .navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    border-bottom: 1px solid $text-color;
 
     a {
-      margin: 0 10px;
+      margin: 0 20px;
+      font-size: 14px;
     }
+
+    .btn {
+      padding: 5px 20px;
+      border: 1px solid $btn-color;
+      border-radius: 5px;
+    }
+  }
+
+  .jumbotron {
+    display: flex;
+    height: 600px;
+
+    .jumbo-left {
+      width: 50%;
+    }
+
+    .jumbo-right {
+      width: 50%;
+    }
+  }
+}
+
+// sezione people
+#people {
+  .box-img-small {
+    width: 33%;
+  }
+}
+
+// sezione features
+#features {
+  .row {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+#get-started {
+  text-align: center;
+}
+
+footer {
+  height: 550px;
+
+  .container {
+    display: flex;
+  }
+
+  .footer-msg {
+    width: 25%;
+  }
+
+  div {
+    width: 15%;
   }
 }
